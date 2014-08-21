@@ -38,14 +38,14 @@ git clone https://github.com/LVLStudio/LVL.WebExam.git
 
 4. Utiliser les données récupérées à l’étape précédente pour remplir la liste d’éléments #items.
 
-    1. Basez-vous sur l’élément .item pour remplir la liste
+    1. Basez-vous sur l’élément `.item` pour remplir la liste
     2. Inclure les éléments au rythme de leurs valeurs timestamp.
     3. Les nouveaux éléments doivent être ajoutés en haut de la liste.
     4. La liste ne doit pas contenir plus de 100 items à la fois. À ce point, les éléments à la fin doivent disparaître pour laisser la place aux nouveaux.
 
 5. Au clic sur un item :
 
-    1.	Le background devient alors gris (#444444) et le texte blanc (#ffffff).
+    1.	Le background devient alors gris (`#444444`) et le texte blanc (`#ffffff`).
     
 6.	Suggérer quelques améliorations d’accessibilité à l’interface (sans les faire).
 
