@@ -10,17 +10,17 @@ L’accessibilité est également une considération.
 git clone https://github.com/LVLStudio/LVL.WebExam.git
 - Créez-vous une branche locale de travail nommée `exam`:
 
-	`cd LVL.WebExam
+    `cd LVL.WebExam`
 
-	`git branch exam
+    `git branch exam`
 
-	`git checkout exam
+    `git checkout exam`
 
 - Committez vos changements dans cette branche.
 
 - Générez une patch nommée exam.patch contenant vos changements de la branche:
 
-	`git format-patch master --stdout > exam.patch
+	`git format-patch master --stdout > exam.patch`
 
 - Finalement, envoyez-nous votre patch à job@lvlstudio.com pour que nous puissions constater votre magnifique travail! ;)
 
