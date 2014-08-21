@@ -1,0 +1,129 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font: normal 14px/1.7em arial, sans-serif;
+    margin: 0; padding: 0;
+    background: -moz-linear-gradient(top, rgba(140,140,140,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top, rgba(140,140,140,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom, rgba(140,140,140,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+}
+
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+header {
+    border-bottom: 1px solid #666;
+    margin: 0 0 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+menu {
+    position: fixed;
+    width: 160px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#content {
+    margin-left: 200px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#menuToggler  {
+    background: rgba(255, 255, 255, 0.1);
+    display: none; /*block*/
+    float: right;
+    height: 100%;
+    padding: 0 5px;
+    position: absolute; right: 0; top: 0;
+}
+
+#menuToggler:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#items {
+    clear: both;
+    padding: 10px 0 0;
+}
+
+.item {
+    border: 1px solid #999;
+    padding: 5px;
+    min-height: 2em;
+    margin: 5px 0;
+    position: relative;
+    background: -moz-linear-gradient(top, rgba(140,140,140,0.15) 0%, rgba(80,80,80,0.18) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top, rgba(140,140,140,0.15) 0%,rgba(80,80,80,0.18) 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom, rgba(140,140,140,0.15) 0%,rgba(80,80,80,0.18) 100%); /* W3C */
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    outline: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.titleHolder {
+    float: left;
+}
+
+.timestampHolder {
+    float: right;
+}
+
+#playerControls {
+    margin: 0 auto;
+    width: 114px;
+}
+
+#playerControls div {
+    background: url(../img/controls.png);
+    cursor: pointer;
+    float: left;
+    box-sizing: border-box;
+    height: 47px;
+    width: 47px;
+    text-align: center;
+    padding: 9px 0 0;
+    margin-right: 10px;
+    overflow: hidden;
+    text-indent: -200px;
+}
+
+.progress {
+    display: block;
+    height: 4px;
+    position: absolute; left: 0px; bottom: 0px;
+    background-color: #66cc66;
+}
+
+span.extra {
+    background: url(../img/award_star_gold_1.png);
+    display: inline-block;
+    height: 16px; width: 16px;
+    position: relative; top: 3px;
+}
