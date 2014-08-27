@@ -1,6 +1,15 @@
 # Instructions générales
 
-Coder pour du web est parfois difficile, mais coder pour une télévision ou des appareils mobiles exige des considérations de performance très pointues. Gardez donc toujours à l’esprit l’optimisation dans la réalisation des instructions et l’aspect multiplateforme. La majorité des points seront sur ces deux éléments.
+Coder pour du web est parfois difficile, mais coder pour une télévision ou des appareils mobiles exige des considérations de performance très pointues. Gardez donc toujours à l’esprit l’optimisation dans la réalisation des instructions et l’aspect multiplateforme.
+
+# À considérer
+
+-	L’accessibilité
+-	Maintenabilité
+-	Qualité du code
+-	Soucis des performances
+-	Gestion d’erreur
+-	Portabilité
 
 L’accessibilité est également une considération.
 
@@ -47,6 +56,6 @@ git clone https://github.com/LVLStudio/LVL.WebExam.git
 
     1.	Le background devient alors gris (`#444444`) et le texte blanc (`#ffffff`).
     
-6.	Suggérer quelques améliorations d’accessibilité à l’interface (sans les faire).
+6.	L’intégration comporte diverses erreurs d’accessibilité, corrigez-les!
 
 7.	L’application se veut être responsive, apportez d’autres améliorations si vous en voyez.
