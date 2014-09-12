@@ -1,5 +1,4 @@
-English bellow
-
+(English version follows)
 # Instructions générales
 
 Coder pour du web est parfois difficile, mais coder pour une télévision ou des appareils mobiles exige des considérations de performance très pointues. Gardez donc toujours à l’esprit l’optimisation dans la réalisation des instructions et l’aspect multiplateforme.
@@ -61,7 +60,7 @@ git clone https://github.com/LVLStudio/LVL.WebExam.git
 
 7.	L’application se veut être responsive, apportez d’autres améliorations si vous en voyez.
 
-====
+------------------------------------------
 
 # General Instructions
 
