@@ -48,7 +48,7 @@ git clone https://github.com/LVLStudio/LVL.WebExam.git
 4. Utiliser les données récupérées à l’étape précédente pour remplir la liste d’éléments #items.
 
     1. Basez-vous sur l’élément `.item` pour remplir la liste
-    2. Inclure les éléments au rythme de leurs valeurs timestamp.
+    2. Inclure les éléments au fur et à mesure que leurs valeurs timestamp est passée.
     3. Les nouveaux éléments doivent être ajoutés en haut de la liste.
     4. La liste ne doit pas contenir plus de 100 items à la fois. À ce point, les éléments à la fin doivent disparaître pour laisser la place aux nouveaux.
 
@@ -111,7 +111,7 @@ git clone https://github.com/LVLStudio/LVL.WebExam.git
 4. Use the data retrieved in the previous step to fill the #items list.
 
     1. Use the .item element to fill the list.
-    2. Include the elements in order of their timestamp value.
+    2. Each element must be included when their timestamp value is passed.
     3. The new elements must be added at the top of the list.
     4. The list must not contain more than 100 items at a time. At that point, elements at the end of the list must disappear to leave room for new ones. 
 
