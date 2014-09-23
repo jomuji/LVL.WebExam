@@ -1,22 +1,22 @@
 (English version follows)
-# Instructions générales
+# Instructions gÃ©nÃ©rales
 
-Coder pour du web est parfois difficile, mais coder pour une télévision ou des appareils mobiles exige des considérations de performance très pointues. Gardez donc toujours à l’esprit l’optimisation dans la réalisation des instructions et l’aspect multiplateforme.
+Coder pour du web est parfois difficile, mais coder pour une tÃ©lÃ©vision ou des appareils mobiles exige des considÃ©rations de performance trÃ¨s pointues. Gardez donc toujours Ã  lâ€™esprit lâ€™optimisation dans la rÃ©alisation des instructions et lâ€™aspect multiplateforme.
 
-# À considérer
+# Ã€ considÃ©rer
 
--	L’accessibilité
--	Maintenabilité
--	Qualité du code
+-	Lâ€™accessibilitÃ©
+-	MaintenabilitÃ©
+-	QualitÃ© du code
 -	Soucis des performances
--	Gestion d’erreur
--	Portabilité
+-	Gestion dâ€™erreur
+-	PortabilitÃ©
 
-# Préparation
+# PrÃ©paration
 
-- Faites un clone local du repository à partir de GitHub:
+- Faites un clone local du repository Ã  partir de GitHub:
 git clone https://github.com/LVLStudio/LVL.WebExam.git
-- Créez-vous une branche locale de travail nommée `exam`:
+- CrÃ©ez-vous une branche locale de travail nommÃ©e `exam`:
 
     `cd LVL.WebExam`
 
@@ -26,39 +26,39 @@ git clone https://github.com/LVLStudio/LVL.WebExam.git
 
 - Committez vos changements dans cette branche.
 
-- Générez une patch nommée exam.patch contenant vos changements de la branche:
+- GÃ©nÃ©rez une patch nommÃ©e exam.patch contenant vos changements de la branche:
 
 	`git format-patch master --stdout > exam.patch`
 
-- Finalement, envoyez-nous votre patch à job@lvlstudio.com pour que nous puissions constater votre magnifique travail! ;)
+- Finalement, envoyez-nous votre patch Ã  job@lvlstudio.com pour que nous puissions constater votre magnifique travail! ;)
 
-# Tâches
+# TÃ¢ches
 
-1. En dessous de 1024px de largeur, il est souhaité de cacher le menu par défaut pour que le reste du contenu puisse prendre toute la largeur.
-	1.	Le bouton de menu (actuellement caché) doit apparaitre
-	2.	Au clic sur le bouton, le panneau de menu doit alterner entre l’état ouvert et l’état fermé, dans une animation de glissement qui pousse le restant du contenu vers la droite.
+1. En dessous de 1024px de largeur, il est souhaitÃ© de cacher le menu par dÃ©faut pour que le reste du contenu puisse prendre toute la largeur.
+	1.	Le bouton de menu (actuellement cachÃ©) doit apparaitre
+	2.	Au clic sur le bouton, le panneau de menu doit alterner entre lâ€™Ã©tat ouvert et lâ€™Ã©tat fermÃ©, dans une animation de glissement qui pousse le restant du contenu vers la droite.
 
-2.	Quelque chose ne va pas avec l’intégration des assets graphiques. Corrigez les boutons de menu et play/stop et l’icône de « extra » pour qu’ils s’affichent correctement (les hauteurs et largeurs en CSS sont correctement définies).
+2.	Quelque chose ne va pas avec lâ€™intÃ©gration des assets graphiques. Corrigez les boutons de menu et play/stop et lâ€™icÃ´ne de Â« extra Â» pour quâ€™ils sâ€™affichent correctement (les hauteurs et largeurs en CSS sont correctement dÃ©finies).
 
-3.	Le web service http://examen.lvlnetworks.com/ retourne des blocs d’information JSON. Construire le module qui permettra de récupérer et d’utiliser ces données.
+3.	Le web service http://examen.lvlnetworks.com/ retourne des blocs dâ€™information JSON. Construire le module qui permettra de rÃ©cupÃ©rer et dâ€™utiliser ces donnÃ©es.
 
-    1.	Chaque appel à l’API retourne des items pour les 10 prochaines secondes et les valeurs startTimestamp et endTimestamp.
-    2.	La liste doit être tenue à jour, assurez-vous de répéter l’appel aux API en conséquence.
+    1.	Chaque appel Ã  lâ€™API retourne des items pour les 10 prochaines secondes et les valeurs startTimestamp et endTimestamp.
+    2.	La liste doit Ãªtre tenue Ã  jour, assurez-vous de rÃ©pÃ©ter lâ€™appel aux API en consÃ©quence.
 
-4. Utiliser les données récupérées à l’étape précédente pour remplir la liste d’éléments #items.
+4. Utiliser les donnÃ©es rÃ©cupÃ©rÃ©es Ã  lâ€™Ã©tape prÃ©cÃ©dente pour remplir la liste dâ€™Ã©lÃ©ments #items.
 
-    1. Basez-vous sur l’élément `.item` pour remplir la liste
-    2. Inclure les éléments au fur et à mesure que leurs valeurs timestamp est passée.
-    3. Les nouveaux éléments doivent être ajoutés en haut de la liste.
-    4. La liste ne doit pas contenir plus de 100 items à la fois. À ce point, les éléments à la fin doivent disparaître pour laisser la place aux nouveaux.
+    1. Basez-vous sur lâ€™Ã©lÃ©ment `.item` pour remplir la liste
+    2. Inclure les Ã©lÃ©ments au fur et Ã  mesure que leurs valeurs timestamp est passÃ©e.
+    3. Les nouveaux Ã©lÃ©ments doivent Ãªtre ajoutÃ©s en haut de la liste.
+    4. La liste ne doit pas contenir plus de 100 items Ã  la fois. Ã€ ce point, les Ã©lÃ©ments Ã  la fin doivent disparaÃ®tre pour laisser la place aux nouveaux.
 
 5. Au clic sur un item :
 
     1.	Le background devient alors gris (`#444444`) et le texte blanc (`#ffffff`).
     
-6.	L’intégration comporte diverses erreurs d’accessibilité, corrigez-les!
+6.	Lâ€™intÃ©gration comporte diverses erreurs dâ€™accessibilitÃ©, corrigez-les!
 
-7.	L’application se veut être responsive, apportez d’autres améliorations si vous en voyez.
+7.	Lâ€™application se veut Ãªtre responsive, apportez dâ€™autres amÃ©liorations si vous en voyez.
 
 ------------------------------------------
 
@@ -68,8 +68,8 @@ Coding for the web is sometimes difficult, but coding for television sets or mob
 
 # To be considered
 
--	Respect of instructions 
--	Performances 
+-	Respecting instructions 
+-	Performance 
 -	Portability
 -	Code quality
 -	Error handling
@@ -101,7 +101,7 @@ git clone https://github.com/LVLStudio/LVL.WebExam.git
     1. The menu button (currently hidden) has to appear.
     2. When the button is clicked, the menu panel must alternate between its open and closed states, in a sliding animation that pushes the rest of the content to the right. 
 
-2. Something is wrong with the integration of the graphical assets. Fix the Menu and Play/Stop buttons, as well as the “extra” icon, so that they display correctly (the height and width are correctly defined in CSS.) 
+2. Something is wrong with the integration of the graphical assets. Fix the Menu and Play/Stop buttons, as well as the â€œextraâ€ icon, so that they display correctly (the height and width are correctly defined in CSS.) 
 
 3. The web service http://examen.lvlnetworks.com/ returns JSON data. Build a module that will retrieve and use this data.
 
