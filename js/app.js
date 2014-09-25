@@ -1,6 +1,6 @@
 jQuery().ready(function ($) {
     $.ajax({
-        url: 'http://webdev.local',
+        url: 'http://examen.lvlnetworks.com/',
         success: function (data) {
             console.log(data);
         },
