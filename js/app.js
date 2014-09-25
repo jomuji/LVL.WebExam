@@ -9,3 +9,13 @@ jQuery().ready(function ($) {
         }
     });
 });
+
+var App = angular.module('App', []);
+ 
+App.controller('ItemCtrl', function($scope, $http) {
+    $http.get('http://examen.lvlnetworks.com/')
+    .then(function(res){
+    $scope.items = res.data.Items;
+});
+});
+
