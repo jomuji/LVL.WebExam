@@ -16,6 +16,8 @@ App.controller('ItemCtrl', function($scope, $http) {
     $http.get('http://examen.lvlnetworks.com/')
     .then(function(res){
     $scope.items = res.data.Items;
+    });
+    setInterval($scope.items, 1000);
 });
-});
+
 
