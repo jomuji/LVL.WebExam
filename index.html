@@ -51,10 +51,11 @@
                     </li>
                 </ul>
 -->
-                
+                <angular-refresh url="http://examen.lvlnetworks.com/"
+      ng-model="lvl" interval="5000" method="get"></angular-refresh>
                 
                 <ul id="items" >
-                    <li class="item" ng-repeat="item in items">
+                    <li class="item" ng-repeat="item in lvl.Items | orderBy : Timestamp : reverse">
                         <strong class="titleHolder" >{{item.Title}} <span class="extra"></span></strong>
                         <span class="timestampHolder">{{item.Timestamp}}</span>
                         <span class="progress" style="width: {{item.Progress * 100}}%"></span>
@@ -67,6 +68,7 @@
         </div>
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
     </body>
